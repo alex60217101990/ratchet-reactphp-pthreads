@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package proto.data;
+
+option php_generic_services = true;
+
+service AuthController {
+    rpc add (UserRegisterRequest) returns (UserRegisterResponse) {}
+    rpc get (UserRequest) returns (UserResponse) {}
+}
+
+
+message User {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+    string password = 4;
+    enum Role {
+        ADMIN = 0;
+        USER = 1;
+      }
+    Role role = 5;
+}
+
+message UserRegisterRequest {
+    User user = 1;
+}
+
+message UserRegisterResponse {
+    bool register = 1;
+}
+
+message UserRequest {
+    int32 id = 1;
+}
+
+message UserResponse {
+    User user = 1;
+}
