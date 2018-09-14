@@ -18,6 +18,7 @@
         "nexmo/laravel": "^1.1",
         "pelim/laravel-zmq": "^1.0",
         "predis/predis": "^1.1",
+        "react/event-loop": "^1.0",
         "react/socket": "^1.0",
         "spatie/laravel-responsecache": "^4.4",
         "vladimir-yuldashev/laravel-queue-rabbitmq": "^7.0"

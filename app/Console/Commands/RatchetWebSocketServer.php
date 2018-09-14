@@ -91,17 +91,16 @@ class RatchetWebSocketServer extends Command
             });
         }
 
-        $loop->addSignal(SIGINT, function () use ($processes) {
+        $loop->addSignal(SIGINT, function () use ($processes, $loop) {
             foreach ($processes as $pid) {
                 posix_kill($pid, SIGINT);
                 $status = 0;
                 pcntl_waitpid($pid, $status);
             }
-            $this->loop->stop();
+            $loop->stop();
         });
 
         $server->run();
-       // $loop->run();
     }
 
     /**

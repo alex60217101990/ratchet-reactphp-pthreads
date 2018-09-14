@@ -4,46 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "782696e78248cd940cc6e28d325af6aa",
+    "content-hash": "78a5498f45631e51cc40417bc9b2c156",
     "packages": [
-        {
-            "name": "alex60217101990/protobuf",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "../alex60217101990/protobuf",
-                "reference": "c80fd25fb29b18db8594c7ce825d39ccb3063a70",
-                "shasum": null
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "GPBMetadata\\Proto\\": "src/GPBMetadata",
-                    "Proto\\Data\\": "src/Proto/Data"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alex602",
-                    "email": "alex6021710@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This package integrate protocol buffer classes structure to you project.",
-            "keywords": [
-                "laravel",
-                "protobuf"
-            ],
-            "transport-options": {
-                "symlink": true
-            }
-        },
         {
             "name": "cakephp/chronos",
             "version": "1.2.2",
@@ -5860,9 +5822,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "alex60217101990/protobuf": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
